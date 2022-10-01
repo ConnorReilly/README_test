@@ -20,47 +20,47 @@ requirements.txt
 Run training_save_deep_models.py with the following arguments:
 
 --epoch (int, default=10)
-The number of epochs to run for.
+- The number of epochs to run for.
 
 --lr (float, default=0.001)
-The learning rate to use.
+- The learning rate to use.
 
 --batchsz (int, default=16)
-The batch size to use.
+- The batch size to use.
 
 --size (int, default=1250)
-The number of features per sample.
+- The number of features per sample.
 
 --path_data (str, default='./training_data/') 
-Path to the training data.
+- Path to the training data.
 
 --path_indices (str, default='./data_indices/') 
-Path to the training data indices.
+- Path to the training data indices.
 
 --path_net (str, default='./saved_models/')
-Path to which the new model will be saved.
+- Path to which the new model will be saved.
 
 --acc_min (float, default=0.95)
-If the final model does not achieve the desired accuracy on the test data, training will restart.
+- Desired minimum test accuracy.  If the final model does not achieve this accuracy on the test data, training will restart.
 
 ## How to test a newly-trained model
 
 Run testing_performances.py with the following arguments:
 
 --size (int, default=1250)
-The number of features per sample.
+- The number of features per sample.
 
 --path_data (str, default='./training_data/') 
-Path to the training data.
+- Path to the training data.
 
 --path_indices (str, default='./data_indices/') 
-Path to the training data indices.
+- Path to the training data indices.
 
 --path_net (str, default='./saved_models/')
-Path to the model to load.
+- Path to the model to load.
 
 --path_record (str, default='./records/') 
-Path to save the output seg_stat.txt file.
+- Path to save the output seg_stat.txt file.
 
 ## Validation
 
